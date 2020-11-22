@@ -1,0 +1,22 @@
+%btn-default {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+
+    &:hover {
+        background-color: #000;
+    }
+}
+
+.btn {
+    @extend %btn-default;
+}
+
+.link-btn {
+    @extend %btn-default;
+    text-transform: uppercase;
+}
+
+button {
+    @include button;
+}

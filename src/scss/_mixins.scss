@@ -1,0 +1,74 @@
+@mixin flex(
+    $ali: stretch,
+    $jc: flex-start,
+    $fw: wrap
+) {
+    display: flex;
+    align-items: $ali;
+    justify-content: $jc;
+    flex-wrap: $fw;
+}
+
+@mixin bg-variant($selector, $color) {
+    #{$selector} {
+        background-color: $color !important;
+    }
+}
+
+@mixin button(
+    $bg: blue,
+    $border: 2px solid black,
+    $hover-bg: green,
+    $hover-border: 3px solid rgb(155, 155, 155),
+    $active-bg: red,
+    $active-border: 3px solid rgb(238, 230, 116)
+) {
+    background: $bg;
+    border: $border;
+    &:hover {
+        background: $hover-bg;
+        border: $hover-border;
+    }
+    &:active {
+        background: $active-bg;
+        border: $active-border;
+    }
+}
+
+@mixin margin-top-variant($selector, $margin,) {
+    #{$selector} {
+        margin-top: $margin;
+    }
+}
+
+@mixin margin-bottom-variant($selector, $margin,) {
+    #{$selector} {
+        margin-bottom: $margin;
+    }
+}
+
+@mixin margin-left-variant($selector, $margin,) {
+    #{$selector} {
+        margin-left: $margin;
+    }
+}
+
+@mixin margin-right-variant($selector, $margin,) {
+    #{$selector} {
+        margin-right: $margin;
+    }
+}
+
+@mixin margin-x-variant($selector) {
+    #{$selector} {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@mixin margin-y-variant($selector) {
+    #{$selector} {
+        margin-top: auto;
+        margin-top: auto;
+    }
+}

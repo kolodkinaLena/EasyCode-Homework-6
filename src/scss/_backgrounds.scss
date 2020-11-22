@@ -1,0 +1,36 @@
+@each $color, $value in $colors {
+    @include bg-variant('.bg-#{$color}',
+    $value);
+}
+
+
+@each $margin, $value in $margins {
+    @include margin-top-variant('.mt-#{$margin}',
+    $value,
+    );
+}
+
+
+@each $margin, $value in $margins {
+    @include margin-bottom-variant('.mb-#{$margin}',
+    $value,
+    );
+}
+
+@each $margin, $value in $margins {
+    @include margin-left-variant('.ml-#{$margin}',
+    $value,
+    );
+}
+
+@each $margin, $value in $margins {
+    @include margin-right-variant('.mr-#{$margin}',
+    $value,
+    );
+}
+
+@include margin-x-variant('.mx-auto');
+@include margin-y-variant('.my-auto');
+
+
+
